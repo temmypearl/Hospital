@@ -74,7 +74,7 @@ nav {
 
 .left-nav li a:hover {
     display: block;
-    background-color: #2190d7;
+    background-color: rgb(68, 216, 68);
     padding: 1rem;
     color: #ffffff;
 }
@@ -158,11 +158,11 @@ nav {
     color: #ffffff;
  }
 
- .hero-page p {
+.hero-page p {
     margin-top: 10px;
     font-size: 15px;
     color: #ffffff;
- }
+}
 
  .btn {
     display: inline-block;
@@ -173,15 +173,17 @@ nav {
     font-weight: 600;
     border-radius: 2px;
  }
- .btn a {
+
+.btn a {
     text-decoration: none; 
     font-size: 0.8rem;  
     color: #fff;
- }
+}
 
  .btn:hover {
     background-color: #00bfff;
- }
+}
+
 .overlay{
     border-image-source: linear-gradient(
             hsla(0, 0%, 0%,0.5),
@@ -191,7 +193,6 @@ nav {
      width: 100%; 
 }
     
-
  /* CONTAINER */
  .container {
     display: grid;
@@ -277,8 +278,8 @@ nav {
     background-color: #00bfff;
  }
 
- /* APPOINMENT */
- .appointment{
+ /* HOME-APPOINMENT */
+ .home-appointment{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 5rem;
@@ -286,19 +287,19 @@ nav {
     padding:2rem 4rem;
  }
 
- .sub-appointment h2 {
+ .hsub-appointment h2 {
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 2rem;
  }
 
- .sub-appointment p {
+ .hsub-appointment p {
     font-size: 1rem;
     margin-bottom: 2rem;
     line-height: 1.2;
  }
 
- .sub-appointment a {
+ .hsub-appointment a {
     color: #ffffff;
     background-color: #5252ac;
     padding: 1rem 2rem;
@@ -395,4 +396,221 @@ strong {
     margin-top: 1rem;
  }
 
- 
+ /* DEPARTMENT */
+ .department {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+    padding: 3rem;
+    /* background-color: rgb(240, 245, 247); */
+    margin-bottom: 2rem;
+ }
+
+ .inner-department {
+    background-color: #f2f2ff;
+    border-radius: 1rem;
+    padding: 4rem 2rem 4rem 3rem;
+ }
+
+ .content {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+ }
+
+ .content h3 {
+    font-size: 1.5rem;
+    margin-bottom:2rem ;
+ }
+
+.content i {
+    font-size: 3rem;
+}
+
+ .inner-department p {
+    font-size: 1rem;
+ }
+
+
+ /* APPOINTMENT */
+ .appointment {
+    background-image: url(/images/appointment.avif);
+    background-size: cover ;
+    width: 100%;
+    height: 40vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-left: 2rem;
+ }
+
+ .appointment h3 {
+    color: #ffffff;
+    font-size: 2rem;
+ }
+
+.appointment a {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+/* form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap:5rem; */
+
+
+.innersub-appointment input,select {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 2rem;
+    box-sizing: border-box;
+} 
+
+.btn {
+    width: 90%;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.appointment p {
+    color: #17a2b8;
+    font-size: 1rem;
+}
+
+form {
+    padding: 2rem;
+    display: grid;
+    gap: 3rem;
+    width: 30%;
+}
+
+ /* FOOTER */
+footer {
+    background-color: #2190d7;
+    padding:2rem 2rem 1rem 2rem;
+}
+  
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer-about img {
+    width: 5vw;
+}
+
+.footer-about h3 {
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+.footer-about p {
+    color: #f2f2f2;
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.socials i {
+    font-size: 1rem;
+    border: 1px solid #000;
+    background-color: #000; 
+    color: #ffffff;
+    border-radius: 1.8rem;
+    padding: 1rem;
+}
+
+.footer-services {
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.footer-container h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.footer-support {
+    margin-top: 1rem;
+}
+
+.footer-support h4 {
+    margin-bottom: 1rem;
+}
+
+.footer-contact {
+    margin-top: 1rem;
+}
+
+.footer-container a {
+    color: #f2f2f2;
+    line-height: 1.5;
+    font-size: 1.05rem;
+}
+
+.footer-container a:hover {
+    color: green;
+}
+
+.footer-contact p {
+    color: #000;
+    font-size: 1.05rem;
+}
+
+.footer-container span {
+    font-size: 1.2rem;
+}
+
+.footer-contact p:hover {
+    color: #00bfff;
+}
+
+.footer-bottom {
+    margin-top: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+
+/* .subscribe {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px;
+    width: 20vw;
+    border-radius: 20px;
+    margin-top: 1rem;
+} */
+
+.email {
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
+.copyright {
+    text-align: center;
+    color: #ffffff;
+}
