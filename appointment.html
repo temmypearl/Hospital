@@ -15,7 +15,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
     <link rel="manifest" href="./images/favicon/site.webmanifest"> 
     <link rel="stylesheet" href="/css/styles.css">
-    <title>Saanu Memorial Hospital</title>
+    <title>Saanu Memorial Hospital | Appointment</title>
 </head>
 <body>
     <header>
@@ -60,10 +60,9 @@
             <h3>Book Appointment</h3>
             <p><a href="index.html">Home /</a>Book Appoinment</p>
         </section>
-        <section class="sub-appoinment">
-            <h2>Make an Appoinment</h2>
+        <section class="sub-appointment">
            <div class="innersub-appointment">
-            <form action="">
+            <form action="" id="appt-form">
                 <input type="text" placeholder="Patient Name">
                 <input type="email" placeholder="Email Address">
                 <input type="tel" placeholder="Phone Number">
@@ -87,7 +86,9 @@
                     <option value="">4:00PM </option>
                     <option value="">5:00PM </option>
                 </select>
-                <select name="dictor" id="doctor">
+            </form>
+            <form action="" id="appt-forms">
+                <select name="doctor" id="doctor">
                     <option value="Select Doctor">Choose Doctor</option>
                     <option value="general medicine">Dr David Martins </option>
                     <option value="Paeditric">Dr Akintunde Matthew</option>
@@ -99,7 +100,79 @@
                 <a href="" class="btn1">Book Appointment</a>
             </form>
            </div>
+           <div class="innersub-appoiment">
+            <h3>Book an Appointment</h3>
+            <p>You can benefit from an expert medical consultation <br> -schedule an appointment now.</p>
+            <ul role="list">
+                <li>200+ Doctor Always Available</li>
+                <li>Free Appointment With Any Specialty</li>
+                <li>Virtual On-Site</li>
+                <h4>Need Some help? <span>Contact Us Today</span></h4>
+                <div class="contactus">
+                    <div class="phone">
+                       <i class="fa-solid fa-phone"></i>
+                       <a href="">090-653-9421</a> <br>
+                       <a href="">080-345-5210</a>
+                    </div>
+                    <div class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                            <a href="">info@Saanmamorialhospital</a>
+                            <a href="">contactus@Saanumemorialhospital</a> 
+                    </div>
+                </div>
+            </ul>
+           </div>
         </section>
     </main> 
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="image">
+                   <img src="images/bsaanu.png" alt="">
+                   <h3>Saanu Memorial Hospital</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere vitae similique id, non voluptate vel corrupti tenetur dolorum deserunt, quasi aperiam optio libero placeat consequatur eligendi aut nulla consequuntur iure.</p>
+                <ul role="list" class="socials">
+                    <li role="listitem"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li role="listitem"><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li role="listitem"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li role="listitem"><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h4>Our Services</h4>
+                <ul role="list ">
+                    <li role="listitem" ><a href="">Pediatrics</a ></li>
+                    <li role="listitem" ><a href="">Vaccinations</a ></li>
+                    <li role="listitem"><a href="">Appointment</a></li>
+                    <li role="listitem"><a href="">Surgery</a></li>
+                    <li role="listitem"><a href="">Orthopedics</a></li>
+                    <li role="listitem"><a href="">Maternity Care</a></li>
+                </ul>
+            </div>
+            <div class="footer-support">
+                <h4>Support</h4>
+                <ul role="list">
+                    <li role="listitem"><a href="">Terms Conditions</a></li>
+                    <li role="listitem"><a href=""> Privacy Policy</a></li>
+                    <li role="listitem"><a href=""> Company Support</a></li>
+                    <li role="listitem"><a href="">FAQs</a></li>
+                    <li role="listitem"><a href="">Company License</a></li>
+                </ul>
+            </div>
+            <div class="subscribe">
+                <h3>Subscribe to our Newsletter</h3>
+                <form action="" id="form">
+                    <input type="email" placeholder="Your email" required="">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>    
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy;2024 ,Saanu Memorial Hospital. All Right reserved. Designed by Meenah</p>
+            </div>
+        </div>
+      </footer>
 </body>
 </html>

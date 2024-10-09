@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+.show {
+    transform: translateY(-20px);
+   }
 
 ul,ol {
     list-style: none;
@@ -134,6 +137,68 @@ nav {
 .dropdown-item li a:hover {
     color: #ddd;
 }
+@media (max-width:1025px){
+    .header{
+        height: fit-content;
+    }
+    .navbar-toggle {
+        display: block;
+        position: absolute;
+        right: 3rem;
+        z-index: 5;
+        color: #000;
+    }
+
+    nav {
+        top: 15vh;
+        right: 0%;
+        width: 70%;
+        height: 100vh;
+        text-align: center;
+        height: 100%;
+        display: block;
+        position: relative;
+        z-index: 4;
+        background-color: #00bfff;
+        transform: translateX(00px);
+    }
+    .left-nav {
+        width: 100%;
+        margin-right: 0rem;
+        display: block;
+        align-items: center;
+        margin-right: 1rem;
+    }
+
+
+    .dropdown i{
+        padding-right: 7rem;
+        color: #ccc;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .department {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .home-appointment img {
+        width: 100%;
+    }
+
+    .sub-container img {
+        width: 100%;
+    }
+
+    .show {
+        transform: translateY(-20px);
+       }
+       
+} 
 
 /* HERO-PAGE */
 .hero-page {
@@ -206,7 +271,6 @@ nav {
     background-color: #96cff3;
     padding: 2rem;
     border-radius: 1rem;
-    height: 40vh;
  }
 
  .container p {
@@ -243,6 +307,41 @@ nav {
     color: #ffffff;
     font-size: 2rem;
     margin-bottom: 1rem;
+ }
+
+ /* CUBE */
+ .cube {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: #74bdeb;
+    gap: 5rem;
+    padding: 2rem;
+    margin:2rem 0;
+ }
+
+ .inner-cube {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+ }
+
+strong {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight:300 ;
+ }
+
+ h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    border-top: 1.5px solid #ddd;
+    padding-top: 1rem;
+ }
+
+ .inner-cube p {
+    font-size: 0.9rem;
+    font-weight: 100;
+    margin-top: 1rem;
  }
 
  /* SUB-CONTAINER*/
@@ -306,11 +405,11 @@ nav {
  }
 
  /* HEALTH */
+
  .box {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
-    padding: 0  2rem;
     margin-bottom: 3rem;
  }
 
@@ -322,7 +421,7 @@ nav {
 
 .box-inner2 {
     background-color: #2190d7;
-    padding: 2rem;
+    padding: 2rem; 
     border-radius: 2rem;
 }
 
@@ -341,6 +440,7 @@ nav {
     border-radius: 2rem;
     font-size: 0.8rem;
 }
+
 .health h3 {
     margin-bottom: 1.5rem;
     color: #ffffff;
@@ -361,40 +461,7 @@ nav {
     margin-bottom: 2rem;
  }
 
- /* CUBE */
- .cube {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    background-color: #74bdeb;
-    gap: 5rem;
-    padding: 2rem;
-    margin:2rem 0;
- }
-
- .inner-cube {
-    background-color: #ffffff;
-    border-radius: 1rem;
-    padding: 1rem 1rem;
- }
-
-strong {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-weight:300 ;
- }
-
- h5 {
-    font-size: 1rem;
-    font-weight: 400;
-    border-top: 1.5px solid #ddd;
-    padding-top: 1rem;
- }
-
- .inner-cube p {
-    font-size: 0.9rem;
-    font-weight: 100;
-    margin-top: 1rem;
- }
+ 
 
  /* DEPARTMENT */
  .department {
@@ -440,13 +507,13 @@ strong {
     height: 40vh;
     background-position: top;
     background-repeat: no-repeat;
-    text-align: left;
-    padding-left: 2rem;
+    text-align: center;
  }
 
  .appointment h3 {
     color: #ffffff;
     font-size: 2rem;
+    padding-top: 4rem;
  }
 
 .appointment a {
@@ -454,44 +521,106 @@ strong {
     font-size: 1.2rem;
 }
 
-/* form {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(1,1fr);
-    gap:5rem; */
+.appointment p {
+    color: #ffffff;
 
-
-.innersub-appointment input,select {
-    width: 100%;
-    margin-bottom: 5px;
-    margin-left: 30px;
-    padding: 10px;
-    border-radius: 2rem;
-    box-sizing: border-box;
-} 
-
-.btn {
-    width: 90%;
-    margin-bottom: 5px;
-    margin-left: 30px;
-    padding: 10px;
-    border-radius: 2rem;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
 }
 
-.appointment p {
-    color: #17a2b8;
+
+/* SUB-APPOINTMENT */
+.sub-appointment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+}
+
+.innersub-appointment {
+    background-color: #fff;
+    padding: 2rem;
+   border-top-left-radius: 2rem;
+   border-bottom-left-radius: 2rem;
+   box-shadow: 2px 0px 5px #f2f2f2 inset;
+}
+
+#appt-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#appt-forms {
+    display: grid;
+    gap: 1rem;
+}
+
+.sub-appointment input,select {
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    border: 1px solid black;
+}
+
+textarea {
+    border-radius: 1rem;
+    height: 20vh;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.btn1 {
+    background-color: #17a2b8;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.btn1:hover {
+    background-color: #2190d7;
+}
+
+.innersub-appoiment {
+    background-color: rgb(226, 240, 245);
+    padding: 2rem 3rem;
+    border-top-right-radius: 2rem;
+   border-bottom-right-radius: 2rem;
+}
+
+.innersub-appoiment h3 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.innersub-appoiment p {
+    margin-bottom: 1rem;
     font-size: 1rem;
 }
 
-form {
-    padding: 2rem;
-    display: grid;
-    gap: 3rem;
-    width: 30%;
+.innersub-appoiment ul li {
+    line-height: 1.5;
+    list-style: square;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
+
+.innersub-appoiment h4 ,span {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.contactus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contactus a {
+    color: #000;
+}
+
 
  /* FOOTER */
 footer {
@@ -502,7 +631,6 @@ footer {
 .footer-container {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 3rem;
 }
 
 .image {
@@ -588,29 +716,128 @@ footer {
 }
 
 .footer-bottom {
+    text-align: center;
     margin-top: 1rem;
     border-top: 1px solid #ddd;
 }
 
-
-/* .subscribe {
+#form {
     display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 8px;
-    width: 20vw;
-    border-radius: 20px;
-    margin-top: 1rem;
-} */
+    width: 100%;
+}
 
-.email {
-    border: none;
-    font-size: 1.5rem;
+.subscribe h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-container input {
+    padding: 1.2rem;
+    width: 20rem;
+    background-color: #7db2d3;
     border-radius: 2rem;
-    padding: 0.5rem;
+    border: none;
+    font-size: 0.8rem;
+}
+
+.footer-container button {
+    cursor: pointer;
+    position: absolute;
+    margin-left: 15rem;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: none;
+    color: #00bfff;
 }
 
 .copyright {
     text-align: center;
     color: #ffffff;
+}
+
+.copyright p {
+    margin-top: 1rem;
+}
+
+/* VACCINATION */
+
+/* main {
+    padding: 20px;
+} */
+
+#vaccine-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+}
+
+#vaccine-form input, select {
+    padding: 5px;
+    width: 50%;
+}
+
+#vaccine-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#vaccine-form button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+/* MEDIA-QUERY */
+
+@media (max-width:912px) {
+
+    .box {
+        display: grid;
+        gap: 1rem;
+        /* grid-template-columns: 1fr; */
+        /* align-items: center;
+        width: 50%;
+        margin-left: 10rem; */
+    }
+
+    .cube {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sub-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .home-appointment {
+        display: grid;
+        grid-template-columns: 1fr;
+        flex-direction: column-reverse;
+    }
+
+    .footer-container {
+        gap: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* .footer-services {
+        margin-right:3rem ;
+    } */
 }
