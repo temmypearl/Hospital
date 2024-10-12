@@ -2,7 +2,22 @@
 // ('click', () => document.querySelector(".nav")
 // .classList.toggle('show'));
 
-function nav
+const toggleButton = document.querySelector('.navbar-toggle');
+const closeButton = document.querySelector('.navbar-close-toggle');
+const nav = document.getElementById('primary-nav');
+
+toggleButton.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    toggleButton.style.display = 'none';
+    closeButton.style.display = 'block';
+    closeButton.classList.add('active');
+});
+
+closeButton.addEventListener('click', () => {
+    nav.classList.remove('active');
+    toggleButton.style.display = 'block';
+    closeButton.style.display = 'none';
+});
 
 
 function checkEligibility() {
