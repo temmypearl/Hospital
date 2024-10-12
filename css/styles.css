@@ -40,7 +40,7 @@ header {
     justify-content: space-between;
     padding: 0 2rem;
     width: 100%;
-    height: 15vh;
+    /* height: 15vh; */
 }
 
 .logo {
@@ -56,7 +56,7 @@ header {
 
 .logo h1 {
     color: blue;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
 }
 
@@ -90,7 +90,7 @@ nav {
 }
 
 .left-nav {
-    margin-right: 6rem;
+    margin-right: 5rem;
 }
 
 .right-nav li a {
@@ -137,68 +137,7 @@ nav {
 .dropdown-item li a:hover {
     color: #ddd;
 }
-@media (max-width:1025px){
-    .header{
-        height: fit-content;
-    }
-    .navbar-toggle {
-        display: block;
-        position: absolute;
-        right: 3rem;
-        z-index: 5;
-        color: #000;
-    }
 
-    nav {
-        top: 15vh;
-        right: 0%;
-        width: 70%;
-        height: 100vh;
-        text-align: center;
-        height: 100%;
-        display: block;
-        position: relative;
-        z-index: 4;
-        background-color: #00bfff;
-        transform: translateX(00px);
-    }
-    .left-nav {
-        width: 100%;
-        margin-right: 0rem;
-        display: block;
-        align-items: center;
-        margin-right: 1rem;
-    }
-
-
-    .dropdown i{
-        padding-right: 7rem;
-        color: #ccc;
-    }
-
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .department {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .home-appointment img {
-        width: 100%;
-    }
-
-    .sub-container img {
-        width: 100%;
-    }
-
-    .show {
-        transform: translateY(-20px);
-       }
-       
-} 
 
 /* HERO-PAGE */
 .hero-page {
@@ -206,7 +145,7 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: fit-content;
     text-align: left;
     width: 100%;
     align-items: left; 
@@ -225,7 +164,7 @@ nav {
 
 .hero-page p {
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 1rem;
     color: #ffffff;
 }
 
@@ -282,7 +221,6 @@ nav {
 
  .inner-container a {
     padding: 0.5rem 1rem;
-    width: 5rem;
     background-color: #8888cc ;
     color: #ffffff;
     transition: color .5s ease-in;
@@ -348,17 +286,18 @@ strong {
  .sub-container {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 5rem;
+    gap: 2rem;
     padding:3rem 2.5rem;
  }
 
  .sub-image img {
     border-radius: 1rem;
+    width: 100%;
  }
 
  .sub-text h3 {
     font-size: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
  }
 
  .sub-text p {
@@ -381,9 +320,13 @@ strong {
  .home-appointment{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 5rem;
+    gap: 2rem;
     background-color: #f2f2f2;
     padding:2rem 4rem;
+ }
+
+ .home-appointment img {
+    width: 100%;
  }
 
  .hsub-appointment h2 {
@@ -393,7 +336,7 @@ strong {
  }
 
  .hsub-appointment p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
     line-height: 1.2;
  }
@@ -411,6 +354,7 @@ strong {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     margin-bottom: 3rem;
+    padding: 0 2rem;
  }
 
 .box-inner {
@@ -447,7 +391,7 @@ strong {
 }
 
 .health p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
     color: #ffffff;
 }
@@ -486,12 +430,12 @@ strong {
  }
 
  .content h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom:2rem ;
  }
 
 .content i {
-    font-size: 3rem;
+    font-size: 2srem;
 }
 
  .inner-department p {
@@ -621,6 +565,81 @@ textarea {
     color: #000;
 }
 
+/* VACCINATION */
+.vaccination {
+    background: url(/images/vaccine.jpg);
+    background-size: cover;
+    height: 50vh;
+    background-position: center;
+    text-align: left;
+    padding: 0 2rem;
+}
+
+.vac-text {
+    top: 50%;  
+    position: relative;
+}
+
+.vac-text h3 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.vac-text p {
+    font-size: 1.4rem;
+    color: #fff;
+}
+/* ELIGIBILTY CHECKER */
+.eligibility {
+    margin: 2rem 1rem;
+    padding: 2rem;
+    background-color: #5252ac;
+    /* padding: 20px; */
+    /* border-radius: 5px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#vaccine-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vtext {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+}
+
+#vaccine-form input, select {
+    padding: 5px;
+    width: 50%;
+}
+
+#vaccine-form button {
+    background-color: #00bfff;
+    color: white;
+    padding: 0.7rem 0.9rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+#vaccine-form button:hover {
+    background-color: #17a2b8;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
 
  /* FOOTER */
 footer {
@@ -631,6 +650,7 @@ footer {
 .footer-container {
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
 }
 
 .image {
@@ -646,6 +666,7 @@ footer {
 .footer-about h3 {
     color: #ffffff;
     font-size: 1.3rem;
+    text-align: center;
 }
 
 .footer-about p {
@@ -735,7 +756,7 @@ footer {
 
 .footer-container input {
     padding: 1.2rem;
-    width: 20rem;
+    width: 15rem;
     background-color: #7db2d3;
     border-radius: 2rem;
     border: none;
@@ -745,7 +766,7 @@ footer {
 .footer-container button {
     cursor: pointer;
     position: absolute;
-    margin-left: 15rem;
+    margin-left: 10rem;
     padding: 1.2rem;
     border-radius: 2rem;
     border: none;
@@ -761,58 +782,46 @@ footer {
     margin-top: 1rem;
 }
 
-/* VACCINATION */
 
-/* main {
-    padding: 20px;
-} */
-
-#vaccine-form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-    display: inline-block;
-    width: 200px;
-}
-
-#vaccine-form input, select {
-    padding: 5px;
-    width: 50%;
-}
-
-#vaccine-form button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#vaccine-form button:hover {
-    background-color: #45a049;
-}
-
-#result {
-    margin-top: 20px;
-    font-size: 1.2em;
-}
 
 /* MEDIA-QUERY */
+@media (max-width:1024px) {
+    .hero-page {
+        height: 60vh;
+    }
+    .inner-container {
+        padding: 1rem;
+    }
+}
 
-@media (max-width:912px) {
+@media (max-width:920px){
+    header {
+        position: fixed;
+        background-color: #fff;
+    }
+    .navbar-toggle {
+        display: block;
+    }
 
-    .box {
+    .navbar-close-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hero-page {
+        height: 50vh;
+    }
+
+    .container {
         display: grid;
-        gap: 1rem;
-        /* grid-template-columns: 1fr; */
-        /* align-items: center;
-        width: 50%;
-        margin-left: 10rem; */
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .inner-container {
+        padding: 2rem;
     }
 
     .cube {
@@ -820,24 +829,38 @@ label {
         grid-template-columns: 1fr 1fr;
     }
 
+    .department {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+
+@media (max-width: 768px) {
+    .hero-page {
+        height: 50vh;
+    }
+
+    .container {
+        margin-top: -4rem;
+    }
+
     .sub-container {
         display: grid;
         grid-template-columns: 1fr;
     }
 
+    .department {
+        display: grid;
+        gap: 2rem;
+    }
+
     .home-appointment {
         display: grid;
         grid-template-columns: 1fr;
-        flex-direction: column-reverse;
     }
-
-    .footer-container {
-        gap: 3rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    /* .footer-services {
-        margin-right:3rem ;
-    } */
 }

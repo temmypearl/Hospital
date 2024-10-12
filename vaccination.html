@@ -33,8 +33,8 @@
         <nav>
             <ul class="left-nav" role="list" aria-expanded="false">
                 <li role="listitem"><a href="index.html">HOME</a></li>
-                <li role="listitem"><a href=""> ABOUT US</a></li>
-                <li role="listitem" class="dropdown"><a href="">OUR SERVICES</a><i class="fa-solid fa-angle-down dropdown-btn"></i>
+                <li role="listitem"><a href=""> ABOUT </a></li>
+                <li role="listitem" class="dropdown"><a href=""> SERVICES</a><i class="fa-solid fa-angle-down dropdown-btn"></i>
                     <ul class="dropdown-item" role="list" aria-expanded="false">
                         <li role="listitem"></li><a href="">GENERAL MEDICINE</a></li>
                         <li role="listitem"></li><a href="">PEDIATRICS</a></li>
@@ -55,24 +55,30 @@
                 <li role="listitem"><a href="">CONTACT</a></li>
             </ul>
             <ul class="right-nav" role="list" aria-expanded="false">
-                <li role="listitem"><i class="fa-solid fa-magnifying-glass"></i></li>
-                <li role="listitem"><a href="">APPOINMENT</a></li>
+                <li role="listitem"><a href="">APPOINTMENT</a></li>
             </ul>
             <button class= "navbar-toggle"aria-label="nav-bar-toggle" aria-controls="primary-nav" aria-expanded="false">&#9776;</button>
             <button class="navbar-close-toggle" aria-label="nav-bar-close-toggle" aria-expanded="true">&#215;</button>
         </nav>   
     </header>
     <main>
-        <section>
-            <h2>Vaccine Eligibility Checker</h2>
-            <p>Please enter your details to check if you qualify for the vaccine.</p>
-            
+        <section class="vaccination overlay">
+            <div class="vac-text">
+               <h3>VACCINATION</h3>
+               <p>Eligibility Checker</p>
+            </div>
+        </section>
+        <section class="eligibility">
+            <div class="vtext">
+                <h2>Vaccine Eligibility Checker</h2>
+                <p>Please enter your details to check if you qualify for the vaccine.</p>
+            </div> 
             <form id="vaccine-form">
                 <label for="age">Enter your Age:</label>
                 <input type="number" id="age" name="age" required><br><br>
 
-                <label for="Income">Enter your Annual Income:</label>
-                <input type="number" id="income" name="income" required><br><br>
+                <label for="annual-income">Enter your Annual Income ($):</label>
+                <input type="text" id="annual-income" name="income" required><br><br>
 
                 <label for="health-condition">Do the have any pre-existing health conditions?</label>
                 <select id="health-condition" name="health-condition" required>
